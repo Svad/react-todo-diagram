@@ -1,0 +1,47 @@
+.user-select(@user-select) {
+  -webkit-touch-callout: @user-select;
+  -webkit-user-select: @user-select;
+  -khtml-user-select: @user-select;
+  -moz-user-select: @user-select;
+  -ms-user-select: @user-select;
+  user-select: @user-select;
+}
+
+#container {
+
+  margin-left: -5%;
+
+  .node-collapse {
+    cursor: pointer;
+  }
+
+  text {
+    .user-select(none);
+    .title, .node-collapse {
+      dominant-baseline: text-after-edge;
+    }
+  }
+
+  .node-tooltip {
+    background: beige;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    padding: 5px;
+    position: fixed;
+    
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 25px;
+    }
+
+
+  }
+}
+

@@ -1,0 +1,29 @@
+{
+  "name": "react-diagram",
+  "version": "0.0.1",
+  "description": "Diagram builder for todomvc-apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify todomvc/js/app.js -o dist/bundle.js -d -v"
+  },
+  "author": "",
+  "dependencies": {
+    "react": "^0.12.1",
+    "reactify": "^0.17.1",
+    "reflux": "^0.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.0",
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-less": "^2.0.1",
+    "less": "^2.1.1",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.2.1"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}

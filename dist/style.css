@@ -1,0 +1,35 @@
+#container {
+  margin-left: -5%;
+}
+#container .node-collapse {
+  cursor: pointer;
+}
+#container text {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#container text .title,
+#container text .node-collapse {
+  dominant-baseline: text-after-edge;
+}
+#container .node-tooltip {
+  background: beige;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  padding: 5px;
+  position: fixed;
+}
+#container .node-tooltip:before {
+  content: '';
+  display: block;
+  position: absolute;
+}
+#container .node-tooltip ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+}
