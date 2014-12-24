@@ -1,7 +1,3 @@
-/**
- * Created by Вадим on 03.12.2014.
- */
-//Todo переименовать AppMounted в AppUpdated, или что получше:)
 var Reflux = require('reflux'),
     config = require('../config'),
     LifecycleActions = require('../actions').treeLayout,

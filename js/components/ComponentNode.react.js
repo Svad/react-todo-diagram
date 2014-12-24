@@ -10,7 +10,7 @@ var React = require('react'),
 
     LayoutActions = require('../actions').treeLayout,
 
-    NodeCollapser = require('./NodeCollapser'),
+    NodeCollapser = require('./NodeCollapser.react'),
     Diagonal = require('./Diagonal.react');
 
 var ComponentNode = React.createClass({
