@@ -26,7 +26,7 @@ gulp.task('browserify', function () {
 });
 
 gulp.task('watchify', ['browserify'], function () {
-    var bundler = browserify(paths.js.src, {cache: {}, packageCache: {}, fullPaths: true, debug: true});
+    var bundler = browserify(paths.js.src, {cache: {}, packageCache: {}, fullPaths: true, debug: process.env.NODE_ENV !== 'production'});
     bundler = watchify(bundler);
     bundler.on('update', rebundle);
 
